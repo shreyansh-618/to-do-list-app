@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #07012b;
+    color: #ffffff;
+    padding: 70px 10% 0;
+    position: relative;
+    padding: 70px 10% 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 120px auto 0 auto;
+    max-width: 500px;
+}
+
+.details {
+    width: 100%;
+}
+
+.stats-container {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+#progressBar {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(0, 140, 255);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#progress {
+    width: 0%;
+    height: 10px;
+    background-color: rgb(248, 215, 215);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#numbers {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(159, 159, 216);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0a0000;
+}
+
+form {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 16px;
+    background: rgb(255, 255, 255);
+    border: 1px solid purple;
+    border-radius: 12px;
+    outline: none;
+}
+
+input:hover {
+    border: 1px solid teal;
+    transition: all 0.3s ease;
+    background-color: purple;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+}
+
+button:hover {
+    background-color: purple;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem {
+    display:flex;
+    background-color: purple;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.taskinput {
+    width: 20px;
+    height: 20px;
+}
+
+.completed p {
+    text-decoration: line-through;
+    color: black;
+}
+
+.taskItem img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}

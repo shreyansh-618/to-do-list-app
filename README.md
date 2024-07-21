@@ -1,0 +1,1 @@
+This is a basic To-Do list app using HTML, CSS and Javascript which is stored in the local storage on browsers.
