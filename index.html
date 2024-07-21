@@ -26,7 +26,21 @@
             <button id="newTask" type="submit">+</button>
         </form>
 
-        <ul id="task-list"></ul>
+        <div id="task-list-container">
+            <ul id="task-list">
+                <li class="taskItem">
+                    <div class="task">
+                        <input type="checkbox" class="taskinput">
+                        <p>Sample Task</p>
+                    </div>
+                    <div>
+                        <img src="edit-icon.png" alt="Edit">
+                        <img src="delete-icon.png" alt="Delete">
+                    </div>
+                </li>
+                <!-- Add more task items here -->
+            </ul>
+        </div>
     </div>
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,16 +9,20 @@ body {
     color: #ffffff;
     padding: 70px 10% 0;
     position: relative;
-    padding: 70px 10% 0;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 120px auto 0 auto;
-    max-width: 500px;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    width: 300px; 
+    height: auto; 
+    margin: 80px 0 0 20px; 
+    padding: 20px; 
+    background-color: #1f1f3d; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px blue; 
 }
 
 .details {
@@ -52,20 +56,24 @@ body {
 }
 
 #numbers {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background-color: rgb(159, 159, 216);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     color: #0a0000;
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px blue;
 }
 
 form {
-    margin-top: 60px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     gap: 10px;
@@ -106,17 +114,30 @@ button:hover {
     cursor: pointer;
 }
 
+#task-list-container {
+    width: 300px; 
+    max-height: 400px; 
+    overflow-y: auto; 
+    list-style: none;
+    position: fixed; 
+    top: 140px; 
+    right: 150px; 
+    background-color: #1f1f3d;
+    box-shadow: 0 4px 8px rgb(0, 89, 255); 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
 #task-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 30px;
     width: 100%;
     list-style: none;
 }
 
 .taskItem {
-    display:flex;
+    display: flex;
     background-color: purple;
     padding: 10px;
     border-radius: 10px;
